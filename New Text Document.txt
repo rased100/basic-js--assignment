@@ -1,0 +1,139 @@
+// problem 1 - Start:
+
+function seerToMon(seer) {
+    var mon = seer / 40;
+    return mon;
+}
+
+var inputSeer = 80;
+var mon = seerToMon(inputSeer)
+// console.log(mon);
+
+// problem 1 - End.
+
+/*------------------------------------*/
+
+// problem 2 - Start:
+
+function moneyCalculator(shartQuantity, pantQuantity, shoeQuantity) {
+    const perShartPrice = 100;
+    const perPantPrice = 200;
+    const perShoePrice = 500;
+
+    // money calculation
+    const shartTotalPrice = shartQuantity * perShartPrice;
+    const pantTotalPrice = pantQuantity * perPantPrice;
+    const shoeTotalPrice = shoeQuantity * perShoePrice;
+
+    // total money
+    const totalMoney = shartTotalPrice + pantTotalPrice + shoeTotalPrice;
+    return totalMoney;
+
+}
+
+const myShoping = moneyCalculator(1, 1, 1);
+// console.log(myShoping);
+
+
+// problem 2 - End.
+
+/*-----------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+3rd- start-----
+-----------------
+
+
+
+function deliveryCost(delevary) {
+    const first100Delevary = 100;
+    const hundredPlusTo200Delevary = 80;
+    const twohundredPlusToMaxDelevary = 50;
+    if (delevary <= 100) {
+        const deliveryCost = delevary * first100Delevary;
+        return deliveryCost;
+    }
+    else if (delevary <= 200) {
+        const firstDeliveryCost = 100 * first100Delevary;
+        const restDelevary = delevary - 100;
+        const secondDeliveryCost = restDelevary * hundredPlusTo200Delevary;
+        const totalDeliveryCost = firstDeliveryCost + secondDeliveryCost;
+        return totalDeliveryCost;
+    }
+    else {
+        const firstDeliveryCost = 100 * first100Delevary;
+        const secondDeliveryCost = 100 * hundredPlusTo200Delevary;
+        const restDelevary = delevary - 200;
+        const restDeliveryCost = restDelevary * twohundredPlusToMaxDelevary;
+        const totalDeliveryCost = firstDeliveryCost + secondDeliveryCost + restDeliveryCost;
+        return totalDeliveryCost;
+    }
+}
+
+const totalCost = deliveryCost(100);
+console.log(totalCost);
+
+
+3rd
+---------------
+----------end
+
+
+
+
+
+
+
+-----------------------------------------------------------------------------------------------------------------------
+
+
+
+4th-start:
+
+
+
+
+
+
+const names = ['rasedul', 'emon', 'tusar', 'rased', 'shamim', 'jubayer', 'tusar', 'sourov', 'ismil'];
+
+function perfectFriend(names) {
+    const unique = [];
+    for (let i = 0; i < names.length; i++) {
+        const element = names[i];
+        // console.log(element);
+        if (element.length == 5) {
+            unique.push(element)
+        }
+    }
+    // for (const element of names) {
+    //     console.log(element);
+    //     if (unique.indexOf(element) == -1) {
+    //         unique.push(element)
+    //     }
+    // }
+    return unique;
+}
+
+const uniqueNames = perfectFriend(names);
+console.log(uniqueNames);
+
+
+
+
+
+------------------------------------------------------------------
+
+4th-end
+
+
+
+
+
